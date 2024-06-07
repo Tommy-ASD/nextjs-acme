@@ -20,9 +20,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
         {children}
         <div>
-          {/* {messages.map((msg, index) => (
+          {messages.map((msg, index) => (
             <p key={index}>{msg}</p>
-          ))} */}
+          ))}
         </div>
       </div>
       <Websocket onMessage={handleWebSocketMessage} />
