@@ -8,7 +8,7 @@ export default function Websocket({ onMessage }: {
   
   useState(() => {
     if (isBrowser) {
-      const ws = new WebSocket("ws://10.0.255.1:43104/ws");
+      const ws = new WebSocket("wss://chess.tommyasd.com/ws");
       console.log("Established a websocket connection")
 
       ws.onmessage = (event) => {
